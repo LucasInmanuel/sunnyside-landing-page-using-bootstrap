@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+*{font-family: 'Barlow', sans-serif;}
+
+body{
+	height: 100%;
+}
+
+header{
+	padding: 20px 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 80vh;
+	min-height: 500px;
+}
+
+.bg-header-desktop{
+	background-image: url('../images/desktop/image-header.jpg');
+}
+
+.bg-header-mobile{
+	background-image: url('../images/mobile/image-header.jpg');
+}
+
+.copy-protect{
+	cursor: initial;
+}
+
+header img.logo-header{
+	position: relative;
+	top: 6px;
+}
+
+nav.mobile-menu{
+	background-image: url('../images/icon_menu_branco.png');
+	background-size: 100% 100%;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+nav.mobile-menu span{
+	font-weight: bold;
+	cursor: pointer;
+	padding: 5px;
+	margin-right: 5px;
+	text-decoration-line: underline;
+	text-decoration-color: black;
+	transition: 0.3s;
+}
+
+nav.mobile-menu span:hover{
+	text-decoration-line: underline;
+	text-decoration-color: red;
+	color: red !important;
+}
+
+nav.mobile-menu ul{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5); 
+	box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+	border-bottom: 8px solid #ccc;
+	border-left: 5px solid #ccc;
+	width: 90%;
+	height: 100%;
+	display: none;
+}
+
+nav.mobile-menu ul li{
+	width: 100%;
+	transition: 0.3s;
+}
+
+nav.mobile-menu ul li:hover{
+	background-color: rgb(210, 210, 210) !important;
+}
+
+nav.mobile-menu ul li a{
+	border-bottom: 1px solid rgba(220, 220, 220,0.5);
+}
+
+nav.desktop-menu li{
+	list-style: none;
+	padding-left: 40px;
+	margin-left: -4px;
+}
+
+nav.desktop-menu li a{
+	font-size: 15px;
+	font-weight: 500;
+	margin-left: -4px;
+	transition: 0.3s;
+	border-bottom: 2px solid transparent;
+}
+
+nav.desktop-menu li a:hover{
+	border-bottom: 2px solid white;
+}
+
+header .container h1{
+	font-family: 'Fraunces', sans-serif;
+	font-weight: 900;
+}
+
+section.mosaicos h2{
+	font-family: 'Fraunces', sans-serif;
+	font-weight: 900;
+}
+
+section.mosaicos a{
+	font-family: 'Fraunces', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	transition: 0.5s;
+}
+
+section.mosaicos a:hover{
+	color: gray !important;
+}
+
+div[class*=position-relative] h2{
+	top: 59%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+p.p-break-1,p.p-break-2{
+	top: 69%;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 300px !important;
+	width: 100% !important;
+}
+
+section.depoimentos{
+	padding: 80px 0;
+}
+
+section.depoimentos h2{
+	font-family: 'Fraunces', sans-serif;
+	font-weight: 700;
+}
+
+section.depoimentos blockquote p:nth-of-type(1){
+	max-width: 275px;
+}
+
+section.depoimentos blockquote p:nth-of-type(2){
+	font-family: 'Fraunces', sans-serif;
+	font-weight: 700;
+}
+
+footer{
+	background-color: hsl(168, 34%, 41%);
+	padding: 60px 0 40px 0;
+}
+
+footer li{
+	position: relative;
+	left: -4px;
+}
+
+footer .menu-footer li a{
+	font-weight: normal;
+	color: hsl(167, 40%, 24%) !important;
+	transition: 0.5s;
+}
+
+footer .menu-footer li a:hover{
+	color: #356b63 !important;
+}
+
+footer li a img{
+	filter: brightness(70%);
+	transition: 0.5s;	
+}
+
+footer li a img:hover{
+	filter: brightness(85%);	
+}
+
+footer .redes-sociais li{
+	padding: 0 10px;
+	position: relative;
+	left: -16px;
+}
+
+@media screen and (max-width: 530px){
+
+	div[class*=position-relative] img{
+		height: 600px;
+	}
+
+	p.p-break-1,p.p-break-2{
+		top: 67%;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 250px !important;
+	}
+
+}
+
+@media screen and (max-width: 370px){
+
+	p.p-break-1{
+		top: 70%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	p.p-break-2{
+		top: 65%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+}
+
